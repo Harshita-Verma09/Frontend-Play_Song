@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="playSong.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Play_Song</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="music_container">
+            <h2 id="title">Ek Dilruba Hai</h2>
+            <h3 id="Singer">Udit Narayan</h3>
+            <div class="img_container">
+                <img src ="./image/akshay.jpg"alt="images">
+            </div>
+            <audio src ="./image/akshay.mpeg"></audio>
+           
+<!------------------- Control the Music  -------------->
+            <div class="music_ctrl">
+                <i class="fas fa-solid fa-backward-fast" id="prev" title="Previous"></i>
+                <i class="fas fa-solid fa-circle-play main_btn" id="play" title="Play"></i>
+                <i class="fas fa-solid fa-forward-fast" id="next" title="Next"></i>
+            </div>
+<!------------------------For like button  ------------->
+            <div class="box5"> 
+                <div class="icon1">
+                    <i class=" f fa-regular fa-heart"></i>&nbsp;&nbsp;
+                </div>
+                <div class="like">
+                <i class="heart fa-solid fa-heart"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="playSong.js"></script>
+</html>

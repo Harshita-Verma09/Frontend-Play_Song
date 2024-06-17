@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Jost", sans-serif;
+}
+body{
+    background-color: #141010;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+   
+}
+.music_container{         
+    width: 35rem;       /* 1rem = 10px */
+    height: 50rem;
+    background-color: #6b5e0be5;
+    background-image: url("https://images.unsplash.com/photo-1513346940221-6f673d962e97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxnb2xkZW4lMjBsaWdodG4lMjBmb3IlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    object-fit:contain;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 2rem 0.3rem rgba(246, 181, 2, 0.723);        /* horizontal, vertical, blur, spread*/
+    padding: 3rem;
+    text-align:center;
+   
+}
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    margin: 2rem  0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow:  0 0.3rem 0.5rem rgba(37, 36, 36, 0.587);
+}
+.music_container #Singer{
+    color: rgb(52, 2, 14);
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    font-weight: 900;
+    background-color: #c58103;
+    margin-left: 5%;
+    height: 19px;
+    width: 15rem;
+    position:absolute;
+    
+}
+.img_container{
+    width: 20rem;
+    height: 25rem;
+    margin: auto;
+    margin-top: 62px;
+}
+.img_container img{
+    width: 100%; /* Image ko 100% width par set karein, taki wo circle me fit ho */
+    height: 20rem; 
+    border-radius: 50%;
+    box-shadow: 0 1.2rem  3rem 0.5rem rgb(133, 107, 1);
+
+}
+.music_ctrl .fas{
+   font-size: 3rem;
+   cursor: pointer;
+   filter: drop-shadow(0 1.2rem 3rem 0.5rem rgb(45, 186, 71));
+
+}
+.music_ctrl .fas:hover{
+    color: rgba(37, 36, 36, 0.587);
+    
+}
+.music_ctrl{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; /* for center */
+    margin-top: 39px;
+    align-items: center;
+}
+.music_ctrl .main_btn{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3.8rem;
+    border-radius: 50%;
+    background-color: #fbc104;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.music_ctrl .main_btn:hover{
+    background-color: #f9dd9d;
+    color: black;
+    box-shadow: 0 1rem 2rem 0.2rem rgb(27, 27, 29);
+}
+.animate{
+    animation: rotate 2s  linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/*like btuuton */
+.box5{
+    position:absolute;
+    display:flex ;
+    margin-left: 28rem;
+    margin-top: -4rem;
+    /* background-color: aquamarine; */
+    
+    
+   
+}
+.box5 .icon1{
+    margin-left: 3px;
+    display: flex;
+    font-size: 20px;
+   
+}
+.like{
+    display: flex;
+    margin-left: -22.5px;
+    font-size: 20px;
+}
